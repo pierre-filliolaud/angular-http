@@ -19,3 +19,8 @@
   </h2>
   <button (click)="rent(selectedCar)">Rent it now !</button>
 </div>
+
+<div *ngIf="rentedCar">
+  <h2>Rented car:</h2>
+  {{rentedCar.plateNumber}}: {{rentedCar.model}}
+</div>

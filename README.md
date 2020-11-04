@@ -4,11 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## The backend Rest web service
 
+This project is running on an Angular presentation server that manages HTML and Javascript code. 
+This presentation server receives its data from another web server where a rest web service is running.
+This web service should be started first:  
+
 https://github.com/charroux/CorrectionWebServiceJPA
 
 ## Angular Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm update` and `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Adding http library
 

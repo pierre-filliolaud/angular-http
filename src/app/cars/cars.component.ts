@@ -12,6 +12,7 @@ export class CarsComponent implements OnInit {
 
   cars: Car[];
   selectedCar: Car;
+  rentedCar: Car;
 
   constructor(private carService: CarService) { }
 
@@ -29,7 +30,7 @@ export class CarsComponent implements OnInit {
   }
 
   rent(car: Car): void {
-    this.carService.rent(car);
+    this.carService.rent(car).subscribe(c => this.rentedCar = c);
   }
 
 }
